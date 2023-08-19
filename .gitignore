@@ -1,0 +1,11 @@
+# .gitignore
+
+
+.vercel/
+*.log
+*.pyc
+__pycache__
+
+# Environments
+
+.venv/ 
