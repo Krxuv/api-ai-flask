@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
+  <title>API Krxuv</title>
+  <meta name="description" content="Free API that can be used for free without apikey">
+  <meta name="author" content="Krxuv Only">
+  <link rel="icon" href="https://telegra.ph/file/d1d79d9b4a501927296ef.jpg">
+    <style>
     body {
       background-size: cover;
       background-repeat: no-repeat;
@@ -22,12 +26,7 @@
         background-image: url('https://telegra.ph/file/fee4881220b9c03746339.jpg');
       }
     }
-
   </style>
-  <title>API Krxuv</title>
-  <meta name="description" content="Free API that can be used for free without apikey">
-  <meta name="author" content="Krxuv Only">
-  <link rel="icon" href="https://telegra.ph/file/d1d79d9b4a501927296ef.jpg">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow shadow-md">
@@ -35,73 +34,393 @@
       <a class="navbar-brand" href="#">API by Krxuv</a>
     </div>
   </nav>
-  
+
   <div class="container mt-2">
     <h2 class="text-white text-center" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8)">Artificial Intelligence Text</h2>
   </div>
-  
+
   <div class="container">
-    <div class="row">
-      <div class="col-md-3 pb-3">
-        <div class="card h-100 shadow shadow-md" style="background-color: rgba(255,255,255,0.70)">
-          <div class="card-body">
-            <h5 class="card-title">GPT-3 MODEL</h5>
-            <p class="card-text">Query prompt=your+prompt<br>Endpoint: /model/gpt3</p>
-            <a href="/model/gpt3?prompt=" class="btn btn-primary">Try It Out</a>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-white">GPT-3.5</h5>
+            <p class="card-text text-white">Query prompt=your+prompt<br>Endpoint: /model/gpt3</p>
+            <a href="/model/gpt3?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 pb-3">
-        <div class="card h-100 shadow shadow-md" style="background-color: rgba(255,255,255,0.70)">
-          <div class="card-body">
-            <h5 class="card-title">GPT-4 MODEL</h5>
-            <p class="card-text">Query prompt=your+prompt<br>Endpoint: /model/gpt4</p>
-            <a href="/model/gpt4?prompt=" class="btn btn-primary">Try It Out</a>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-white">GPT-3.5 V2</h5>
+            <p class="card-text text-white">Query prompt=your+prompt<br>Endpoint: /model/gpt3v2</p>
+            <a href="/model/gpt3v2?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 pb-3">
-        <div class="card h-100 shadow shadow-md" style="background-color: rgba(255,255,255,0.70)">
-          <div class="card-body">
-            <h5 class="card-title">Falcon_40B MODEL</h5>
-            <p class="card-text">Query: prompt=your+prompt<br>Endpoint: /model/falcon</p>
-            <a href="/model/falcon?prompt=" class="btn btn-primary">Try It Out</a>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-white">GPT-3.5 TURBO</h5>
+            <p class="card-text text-white">Query prompt=your+prompt<br>Endpoint: /model/gpt3turbo</p>
+            <a href="/model/gpt3turbo?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 pb-3">
-        <div class="card h-100 shadow shadow-md" style="background-color: rgba(255,255,255,0.70)">
-          <div class="card-body">
-            <h5 class="card-title">Alpaca_7B MODEL</h5>
-            <p class="card-text">Query prompt=your+prompt<br>Endpoint: /model/alpaca</p>
-            <a href="/model/alpaca?prompt=" class="btn btn-primary">Try It Out</a>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-white">GPT-4</h5>
+            <p class="card-text text-white">Query prompt=your+prompt<br>Endpoint: /model/gpt4</p>
+            <a href="/model/gpt4?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-white">Alpaca_7B</h5>
+            <p class="card-text text-white">Query prompt=your+prompt<br>Endpoint: /model/alpaca</p>
+            <a href="/model/alpaca?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-white">Falcon_40B</h5>
+            <p class="card-text text-white">Query prompt=your+prompt<br>Endpoint: /model/falcon</p>
+            <a href="/model/falcon?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <div class="container">
     <h2 class="text-white text-center" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8)">Artificial Intelligence Image</h2>
   </div>
-  
-  <div class="container mt-2">
-    <div class="row">
-      <div class="col-md-3 pb-3">
-        <div class="card h-100 shadow shadow-md" style="background-color: rgba(255,255,255,0.70)">
-          <div class="card-body">
-            <h5 class="card-title">GPT-3 MODEL</h5>
-            <p class="card-text">Query prompt=your+prompt<br>Endpoint: /model/gpt3</p>
-            <a href="/model/gpt3?prompt=" class="btn btn-primary">Try It Out</a>
+
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/absreal16.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Absolute Reality V1.6</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/absreal16</p>
+            <a href="/image/model/absreal16?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 pb-3">
-        <div class="card h-100 shadow shadow-md" style="background-color: rgba(255,255,255,0.70)">
-          <div class="card-body">
-            <h5 class="card-title">GPT-4 MODEL</h5>
-            <p class="card-text">Query prompt=your+prompt<br>Endpoint: /model/gpt4</p>
-            <a href="/model/gpt4?prompt=" class="btn btn-primary">Try It Out</a>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/absreal181.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Absolute Reality V1.8.1</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/absreal181</p>
+            <a href="/image/model/absreal181?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/analog10.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Analog V1</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/analog10</p>
+            <a href="/image/model/analog10?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/anythingv3.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Anything V3</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/anythingv3</p>
+            <a href="/image/model/anythingv3?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/anythingv45.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Anything V4.5</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/anythingv45</p>
+            <a href="/image/model/anythingv45?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/anythingv5.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Anything V5</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/anythingv5</p>
+            <a href="/image/model/anythingv5?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/aom3a3.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">AbyssOrangeMix V3</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/aom3a3</p>
+            <a href="/image/model/aom3a3?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/deliberatev2.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Deliberate V2</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/deliberatev2</p>
+            <a href="/image/model/deliberatev2?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/dldiffus1.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Dreamlike Diffusion V1</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/dldiffus1</p>
+            <a href="/image/model/dldiffus1?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/dlphoto2.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Dreamlike Photoreal V2</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/dlphoto2</p>
+            <a href="/image/model/dlphoto2?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/dshaper6.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Dreamshaper 6 baked vae</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/dshaper6</p>
+            <a href="/image/model/dshaper6?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/dshaper7.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Dreamshaper 7</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/dshaper7</p>
+            <a href="/image/model/dshaper7?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/dshaper8.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Dreamshaper 8</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/dshaper8</p>
+            <a href="/image/model/dshaper8?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/animediffv1.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Eimis Anime Diffusion V1.0</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/animediffv1</p>
+            <a href="/image/model/animediffv1?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/vividmix.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Elldreth's Vivid</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/vividmix</p>
+            <a href="/image/model/vividmix?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/lyriel16.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Lyriel V1.6</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/lyriel16</p>
+            <a href="/image/model/lyriel16?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/mecha10.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">MechaMix V1.0</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/mecha10</p>
+            <a href="/image/model/mecha10?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/meinav9.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">MeinaMix Meina V9</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/meinav9</p>
+            <a href="/image/model/meinav9?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/meinav11.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">MeinaMix Meina V11</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/meinav11</p>
+            <a href="/image/model/meinav11?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/ojourneyv4.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Openjourney V4</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/ojourneyv4</p>
+            <a href="/image/model/ojourneyv4?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/portraitpv1.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Portrait+ V1</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/portraitpv1</p>
+            <a href="/image/model/portraitpv1?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/rvisionv14.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Realistic Vision V1.4</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/rvisionv14</p>
+            <a href="/image/model/rvisionv14?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/rvisionv2.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Realistic Vision V2.0</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/rvisionv2</p>
+            <a href="/image/model/rvisionv2?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/rvisionv4.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Realistic Vision V4.0</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/rvisionv4</p>
+            <a href="/image/model/rvisionv4?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/rvisionv5.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Realistic Vision V5.0</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/rvisionv5</p>
+            <a href="/image/model/rvisionv5?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/rsdiffv1.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Redshift Diffusion V1.0</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/rsdiffv1</p>
+            <a href="/image/model/rsdiffv1?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/revanimv122.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">ReV Animated V1.2.2</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/revanimv122</p>
+            <a href="/image/model/revanimv122?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/sdv14.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">SD V1.4</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/sdv14</p>
+            <a href="/image/model/sdv14?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/sdv15.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">SD V1.5</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/sdv15</p>
+            <a href="/image/model/sdv15?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/shoninsv10.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Shonin's Beautiful People V1.0</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/shoninsv10</p>
+            <a href="/image/model/shoninsv10?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/theallys.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">TheAlly's Mix II</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/theallys</p>
+            <a href="/image/model/theallys?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 mb-4 text-center" style="background-color: rgba(0,0,0,0.50);">
+          <div class="card-body d-flex flex-column">
+            <img src="https://raw.githubusercontent.com/Krxuv/media/main/timeless1.jpg" class="card-img-top">
+            <h5 class="card-title text-white pt-2">Timeless V1</h5>
+            <p class="card-text text-white">prompt=beautiful woman, blue eyes, cat ears, black hair<br>Endpoint: /image/model/timeless1</p>
+            <a href="/image/model/timeless1?prompt=" class="btn btn-primary mt-auto">Try It Out</a>
           </div>
         </div>
       </div>
