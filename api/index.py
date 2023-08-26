@@ -2,8 +2,18 @@ from flask import Flask, request, jsonify, render_template, Response
 from aiohttp import ClientSession
 import freeGPT
 import asyncio
+import requests
+import time
+from apscheduler.schedulers.background import BackgroundScheduler
 from scraper_ai import gpt35v2, gpt4, gpt35plus
 from scraper_ai_img import ai_image
+
+def send_request():
+    response = requests.get("https://api.krxuv.repl.co")
+    print('Requests send at: ' + time.ctime())
+
+scheduler = BackgroundScheduler()
+scheduler.add_job(send_request, 'interval', minutes=5)
 
 database_model_img = {
     "absreal16": "absolutereality_V16.safetensors [37db0fc3]", #Absolute Reality V1.6
@@ -159,4 +169,5 @@ async def freegpttext(yourprompt, model):
 
 if __name__ == "__main__":
     # Running server
+    scheduler.start()
     app.run(host='0.0.0.0',port=8080)
